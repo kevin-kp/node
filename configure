@@ -40,8 +40,8 @@ import string
 CC = os.environ.get('CC', 'cc' if sys.platform == 'darwin' else 'gcc')
 CXX = os.environ.get('CXX', 'c++' if sys.platform == 'darwin' else 'g++')
 
-CC = 'gcc-7'
-CXX = 'g++-7'
+#CC = 'gcc-7'
+#CXX = 'g++-7'
 
 root_dir = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(root_dir, 'tools', 'gyp', 'pylib'))
