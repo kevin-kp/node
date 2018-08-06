@@ -40,6 +40,7 @@ import string
 CC = os.environ.get('CC', 'cc' if sys.platform == 'darwin' else 'gcc')
 CXX = os.environ.get('CXX', 'c++' if sys.platform == 'darwin' else 'g++')
 
+# Used when OS X is used with GCC-7
 #CC = 'gcc-7'
 #CXX = 'g++-7'
 
