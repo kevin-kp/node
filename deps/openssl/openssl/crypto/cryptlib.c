@@ -374,7 +374,7 @@ void OPENSSL_die(const char *message, const char *file, int line)
  * There are also assembler versions of this function.
  */
 # undef CRYPTO_memcmp
-int CRYPTO_memcmp(const void * in_a, const void * in_b, size_t len)
+/*int CRYPTO_memcmp(const void * in_a, const void * in_b, size_t len)
 {
     size_t i;
     const volatile unsigned char *a = in_a;
@@ -385,13 +385,13 @@ int CRYPTO_memcmp(const void * in_a, const void * in_b, size_t len)
         x |= a[i] ^ b[i];
 
     return x;
-}
+}*/
 
 /*
  * For systems that don't provide an instruction counter register or equivalent.
  */
-uint32_t OPENSSL_rdtsc(void)
+/*uint32_t OPENSSL_rdtsc(void)
 {
     return 0;
-}
+}*/
 #endif
